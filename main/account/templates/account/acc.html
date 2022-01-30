@@ -1,0 +1,20 @@
+
+<!DOCTYPE html><html ng-app="Stream" ng-controller="LoginController" ng-init="$root.fleSite = 'https://fle.stream.jw.org'; loadLanguage('https://prod-assets.stream.jw.org')"><head><meta charset="utf-8"><base href="" target="_self" id="base_path"><meta http-equiv="X-UA-Compatible" content="IE=edge"><link rel="apple-touch-icon" href="/img/jwstream/jw.stream.144x144.png"><link rel="icon" href="/favicon.ico?v2" type="image/x-icon"><link rel="shortcut icon" href="/favicon.ico?v2" type="image/x-icon"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0"><title>JW Stream</title><meta content="/img/jwstream/jw.stream.70x70.png" property="og:image"><meta content="/img/jwstream/jw.stream.70x70.png" name="msapplication-square70x70logo"><meta content="/img/jwstream/jw.stream.150x150.png" name="msapplication-square150x150logo"><meta content="/img/jwstream/jw.stream.350x150.png" name="msapplication-wide310x150logo"><meta content="/img/jwstream/jw.stream.310x310.png" name="msapplication-square310x310logo"><link href="/img/jwstream/jw.stream.144x144.png" sizes="144x144" rel="apple-touch-icon-precomposed"><link rel="stylesheet" type="text/css" href="//prod-assets.stream.jw.org/2.12.0-20210623174754/css/stream.login.min.css"><script>window.ot = false;</script></head><body><div id="loginWrapper"><div id="loginContainer"><div id="logo"><img src="/img/2.0.0/stmsprite/jw-streaming-logo.png"></div>
+	<form id="form" autocomplete="off">
+		<div id="loadingWheel" ng-class="{'hidden': hideWheel}"><span ng-bind="label_redirecting_jw" ng-if="redirecting"></span>
+			<div id="fountainG"><div id="fountainG_1" class="fountainG"></div>
+			<div id="fountainG_2" class="fountainG"></div>
+			<div id="fountainG_3" class="fountainG"></div><div id="fountainG_4" class="fountainG"></div>
+			<div id="fountainG_5" class="fountainG"></div><div id="fountainG_6" class="fountainG"></div>
+			<div id="fountainG_7" class="fountainG"></div><div id="fountainG_8" class="fountainG"></div></div></div>
+			<div id="formElements" class="hidden" ng-class="{'show': showForm}"><div id="loginLengend" ng-bind="label_log_in"></div><div>
+				<label for="username" ng-bind="label_username"></label>
+				    <input ng-model="username" type="text" id="username" ng-keyup="shouldHideExamples()" ng-enter="process()" my-focus="focusUsername" ng-model-options="{ debounce: 0 }" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"></div><div ng-hiden="!hideExamples">
+				<label for="password" ng-bind="label_password"></label>
+				    <input ng-model="password" type="password" id="password" ng-enter="process()" ng-focus="checkUsername()" my-focus="remember" my-focus="focusPassword"></div><div id="rememberDiv" ng-class="{'loginError': loginError}"><input type="checkbox" id="remember" ng-model="remember">
+				<label for="remember" id="checkboxLabelOverlay"></label><label for="remember" id="rememberLabel" ng-bind="label_remember_username"></label></div><div id="errorMessage" ng-class="{'loginError': loginError}"><label ng-bind="errorMessage"></label></div><input type="button" ng-value="button_log_in" id="button" ng-click="process()" ng-class="{'loginError': loginError}"></div>
+			</form>
+
+
+
+</div></div><script type="text/javascript" src="//prod-assets.stream.jw.org/2.12.0-20210623174754/js/2.0.0/assets/libs/angular.min.js"></script><script type="text/javascript" src="//prod-assets.stream.jw.org/2.12.0-20210623174754/js/2.0.0/assets/libs/ngStorage.min.js"></script><script type="text/javascript" src="//prod-assets.stream.jw.org/2.12.0-20210623174754/js/2.0.0/assets/libs/directive.focus.js"></script><script type="text/javascript" src="//prod-assets.stream.jw.org/2.12.0-20210623174754/js/2.0.0/dist/login.min.js"></script></body></html>
